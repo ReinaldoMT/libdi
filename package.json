@@ -1,0 +1,25 @@
+{
+  "name": "libdi",
+  "version": "0.1.0",
+  "description": "A Simple dependency injection for node-js",
+  "main": "src/index.js",
+  "author": "Reinaldo Martins Thoma",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js, src",
+    "sampleMvc": "nodemon samples/mvc/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  },
+  "keywords": [
+    "di",
+    "dependency",
+    "injection",
+    "node",
+    "ecma"
+  ],
+  "dependencies": {}
+}
