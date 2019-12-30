@@ -1,3 +1,5 @@
+const { GetInstanceOfError } = require('./errors')
+
 const mode = {
   scoped: "scoped",
   singleton: "singleton",
@@ -10,6 +12,7 @@ if (typeof global === "undefined") {
 
 global.libdiConfig = {};
 global.libdiSingletonInstances = {};
+
 
 module.exports = {
   /**
@@ -32,6 +35,10 @@ module.exports = {
 
   getInstanceOf(id) {
     const config = global.libdiConfig[id];
+
+    if (!config) {
+      throw GetInstanceOfError(id);
+    }
 
     if (config.mode === mode.singleton) {
       // Singleton
