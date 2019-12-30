@@ -1,7 +1,7 @@
 {
   "name": "libdi",
-  "version": "0.1.0",
-  "description": "A Simple dependency injection for node-js",
+  "version": "0.1.1",
+  "description": "A Simple dependency injection for Node.js",
   "main": "src/index.js",
   "author": "Reinaldo Martins Thoma <dev@rmt.com.br>",
   "license": "MIT",
