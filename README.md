@@ -1,8 +1,6 @@
 # 💉 libdi
 A Simple dependency injection for Node.js
 
-*Current version: 0.1.0*
-
 ## Get Started
 Instalation
 ```sh
